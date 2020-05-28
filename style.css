@@ -1,13 +1,32 @@
 /* General styles */
 
 /* color: rgba(255, 245, 238, .9); seashell */
-/* font-family: 'Merriweather', serif;
-
-font-family: 'Acme', sans-serif;
-
-font-family: 'Cinzel', serif; */
 
 /* general */
+/* 
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat/Montserrat-Light.ttf");
+    src: url("assets/fonts/Montserrat/Montserrat-Regular.ttf"); */
+    /* src: url("assets/fonts/Montserrat/Montserrat-Medium.ttf"); */
+    /* src: url("assets/fonts/Montserrat/Montserrat-SemiBold.ttf"); */
+/* } */
+/* @font-face {
+    font-family: "Lora";
+    src: url("assets/fonts/Lora/static/Lora-Bold.ttf");
+} */
+html {
+    /* font-family: 'Montserrat'; */
+}
+h1
+{
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+}
+p, a
+{
+    font-family: 'Open Sans', sans-serif;
+}
 
 :root
 {
@@ -157,6 +176,8 @@ header
     margin: 0;
     padding: 0;
 }
+
+
 /* Hero area */
 /* .hero-text
 {
@@ -173,17 +194,27 @@ header
 {
     position: fixed;
     left: 50%;
+    top: 20%;
     transform: translateX(-50%);
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    height: 105vh;
-    z-index: 0;
+    height: 400px;
     animation: fadeOut 500ms forwards;
     opacity: 0;
 }
-
+.logo-small
+    {
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+        z-index: 2;
+        height: 68px;
+        top: 2px;
+        left: 89%;
+    }   
 .active
 {
     animation: fadeIn 500ms forwards;
@@ -212,10 +243,13 @@ header
 .nav-toggle
 {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
-    padding: 1.2rem;
+    padding: 18px 12px;
+    margin: 5px;
     cursor: pointer;
+    background-color: var(--dark-50);
+    border-radius: 5px;
 }
 .hamburger, .hamburger::before, .hamburger::after
 {
@@ -251,8 +285,8 @@ header
 /* nav settings */
 .nav-container
 {
-    position: absolute;
-    background: var(--blue-black);
+    position: fixed;
+    background: var(--blue-black-50);
     width: 100%;
     height: 100%;
     top: 0;
@@ -430,7 +464,10 @@ header
     width: 100vw;
     background-color: var(--spring2);
 }
-
+.home-content
+{
+    margin: 0 30px;
+}
 
 /* About */
 /* About divider */
