@@ -58,6 +58,7 @@ function scrollCalculation()
 
 
 }
+let disableScroll = false;
 $('.nav-toggle').on("click", function()
 {
     $(this).toggleClass('open');
@@ -68,4 +69,40 @@ $('.nav-toggle').on("click", function()
     $('.nav-link-text').toggleClass('hide-link').toggleClass('show-link');
     $('.nav-footer-email').toggleClass('hide-link').toggleClass('show-link');
     $('.social-text').toggleClass('hide-link').toggleClass('show-link');
+
+    //Simple script to disable scroll when nav is open
+
+    let maxSize = window.matchMedia("(max-width: 768px)");
+    console.log(maxSize);
+    if (!disableScroll && maxSize.matches)
+    {
+        disableScroll = !disableScroll;
+        $('html, body').css({
+            overflow: 'hidden',
+
+        });
+    }
+    else {
+        disableScroll = !disableScroll;
+        $('html, body').css({
+            overflow: 'auto',
+
+        });
+    }
 });
+
+
+
+
+
+
+
+
+// $('html, body').css({
+//     overflow: 'hidden',
+//     height: '100%'
+// });
+// $('html, body').css({
+//     overflow: 'auto',
+//     height: 'auto'
+// });

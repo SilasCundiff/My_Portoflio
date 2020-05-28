@@ -281,9 +281,9 @@ p, a
 .nav-container
 {
     position: fixed;
-    background: var(--dark);
+    background: var(--dark-75);
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 .site-nav
 {
