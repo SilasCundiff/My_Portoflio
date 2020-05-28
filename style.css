@@ -15,18 +15,6 @@
     font-family: "Lora";
     src: url("assets/fonts/Lora/static/Lora-Bold.ttf");
 } */
-html {
-    /* font-family: 'Montserrat'; */
-}
-h1
-{
-    font-family: 'Lora', serif;
-    font-size: 4rem;
-}
-p, a
-{
-    font-family: 'Open Sans', sans-serif;
-}
 
 :root
 {
@@ -172,11 +160,19 @@ body
 }
 header
 {
-    height: 110vh;
+    height: 98vh;
     margin: 0;
     padding: 0;
 }
-
+h1
+{
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+}
+p, a
+{
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Hero area */
 /* .hero-text
@@ -202,7 +198,6 @@ header
     transition: all 300ms ease-out;
     height: 400px;
     animation: fadeOut 500ms forwards;
-    opacity: 0;
 }
 .logo-small
     {
@@ -246,10 +241,10 @@ header
     position: fixed;
     top: 0;
     padding: 18px 12px;
-    margin: 5px;
+    margin: 7px;
     cursor: pointer;
-    background-color: var(--dark-50);
-    border-radius: 5px;
+    background-color: var(--dark-75);
+    border-radius: 6px;
 }
 .hamburger, .hamburger::before, .hamburger::after
 {
@@ -286,42 +281,35 @@ header
 .nav-container
 {
     position: fixed;
-    background: var(--blue-black-50);
+    background: var(--dark);
     width: 100%;
     height: 100%;
-    top: 0;
-    overflow: hidden;
 }
 .site-nav
 {
-    margin: 12% 0 0 0;
-    display: inline-block;
-    font-size: 2rem;
+    margin: 72px 0 0 0;
+    font-size: 38px;
     width: 100%;
 }
 .site-nav ul
 {
     list-style-type: none;
-    /* background-color: black;  */
     margin: 0;
     padding: 0;
 }
 .site-nav li
 {
     border-bottom: 1px solid var(--truewhite);
-    margin: 0;
-    display: flex;
+    /* display: flex; */
 }
 .nav-link
 {
-    text-decoration: none;
-    width: 100%;
-    padding: 8%;
     display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 5% 0;
     color: var(--truewhite);
-    text-align: left;
 }
-
 
 .nav-link:hover, .nav-link:focus
 {
@@ -350,7 +338,7 @@ header
 }
 .nav-link-text
 {
-    width: 50%;
+    /* width: 50%; */
 }
 /* nav footer */
 .nav-footer
@@ -364,9 +352,8 @@ header
 .social-icon-bar
 {
     width: 100%;
-    padding: .8rem 0;
-    font-size: 2.5rem;
-    /* display: block; */
+    font-size: 48px;
+    padding-top: 16px;
 }
 .social-text
 {
@@ -374,17 +361,20 @@ header
 }
 .nav-footer-links
 {
-    margin: 0 1.5rem;
+    margin: 0 24px;
     color: var(--truewhite);
 }
 .nav-footer-links:hover
 {
     color: var(--offwhite);
 }
+.nav-footer-email {
+    margin-top: 16px;
+}
 .nav-footer span
 {
     color: var(--truewhite);
-    font-size: 26px;
+    font-size: 24px;
 }
 .nav-footer span a
 {
@@ -460,8 +450,8 @@ header
 /* Home Divider */
 .home-divider
 {
-    height: 110vh;
-    width: 100vw;
+    height: 800px;
+    width: 100%;
     background-color: var(--spring2);
 }
 .home-content
@@ -473,33 +463,27 @@ header
 /* About divider */
 .about-divider
 {
-    height: 110vh;
-    width: 100vw;
+    height: 800px;
+    width: 100%;
     background-color: var(--summer2);
 }
-
 
 /* Projects */
 /* Projects divider */
 .projects-divider
 {
-    height: 110vh;
-    width: 100vw;
+    height: 800px;
+    width: 100%;
     background-color: var(--fall2);
 }
 /* Contact */
 /* Contact divider */
 .contact-divider
 {
-    height: 110vh;
-    width: 100vw;
+    height: 800px;
+    width: 100%;
     background-color: var(--winter2);
 }
-
-
-
-
-
 
 
 
@@ -511,10 +495,7 @@ header
         font-size: 6rem;
         display: none;
     } */
-    .logo-image
-    {
-       width: auto;
-    }
+    
     /* logo animation desktop */
     .logo-small
     {
@@ -522,14 +503,13 @@ header
         -moz-transition: all 300ms ease-in;
         -o-transition: all 300ms ease-in;
         transition: all 300ms ease-in;
-        height: 5rem;
+        height: 86px;
         top: 0;
-        left: 130px;
+        left: 150px;
     }   
     /* desktop nav */
     .nav-toggle
     {
-        position: fixed;
         padding: 25px 17px;
     }
     .nav-container
@@ -543,48 +523,44 @@ header
     }
     .site-nav
     {
-        margin-top: 50%;
+        margin-top: 140px;
     }
     .site-nav a
     {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        text-align: right;
     }
     .nav-link
     {
-        font-size: 36px;
+        font-size: 32px;
         padding: 10px 25px 10px 10px;
     }
     .nav-icon
     {
-        margin-left: 0;
-        width: 50px;
+        margin: 6px 0 0 0;
         grid-column: 3/3;
         grid-row: 1;
     }
     .social-icon-bar
     {
+        width: 98%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         padding: 0;
-        margin: 20% 0 10% 0;
-        /* background-color: black; */
-        /* background-color: whitesmoke; */
+        margin: 24px 0;
+        font-size: 38px;
     }
     .social-text
     {
         display: unset;
-        font-size: 36px;
-        margin: 10% 0 0 1%;
+        margin: 10% 0 0 0;
     }
     .git-link
     {
         grid-column: 3/4;
         grid-row: 1/2;
-        margin: 5px;
     }
     .st1
     {
@@ -613,11 +589,8 @@ header
     }
     .nav-footer-links
     {
-        margin: 0 .5rem;
-    }
-    .nav-footer-email
-    {
-        font-size: 26px;
+        margin: 4px 4px;
+        padding: 0;
     }
     /* desktop nav animations */
     .slide-out
@@ -625,13 +598,8 @@ header
     transition: transform 1000ms;
     transform: translateX(1%);
     }
-    .fa-github-square, .fa-linkedin, .fa-twitter-square
-    {
-        padding-right: 8px;
-    }
     .nav-link-text
     {
-        /* background: red; */
         grid-column: 1/2;
         grid-row: 1;
     }
@@ -645,5 +613,8 @@ header
         transition: opacity 800ms 500ms ease-in;
         opacity: 1;
     }
-    
+    .home-content
+    {
+        margin: 0 20px 0 112px;
+    }
 }
