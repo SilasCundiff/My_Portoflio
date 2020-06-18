@@ -64,7 +64,7 @@ $('.nav-toggle').on("click", function()
     $(this).toggleClass('open');
     $('.nav-container').toggleClass('nav-container--closed').toggleClass('nav-container--open');
     for (let i = 0; i < 9; i++) {
-        $('.sl' + i).toggleClass('slide-in' + i).toggleClass('slide-out');
+        $('.social-link' + i).toggleClass('slide-in' + i).toggleClass('slide-out');
     }
     $('.nav-link-text').toggleClass('hide-link').toggleClass('show-link');
     $('.nav-footer-email').toggleClass('hide-link').toggleClass('show-link');
